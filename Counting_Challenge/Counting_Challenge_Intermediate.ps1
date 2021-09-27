@@ -16,8 +16,8 @@ for ( $i = $s; $i -le $e; $i++ ){
         $output.Matches += +$i
     }
 }
-Write-Output ( $output.sum / $count )
-Write-Output $output.sum
+Write-Output "Average is : $( ($output.sum / $count) )"
+Write-Output "Sum is : $($output.sum)"
 
 do {
     $read = Read-Host "Do you want to see all matches ? (y,n)"
