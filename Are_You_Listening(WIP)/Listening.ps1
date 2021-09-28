@@ -1,0 +1,2 @@
+
+Get-NetIPAddress -InterfaceAlias ethernet -AddressFamily ipv4 | Select-Object IPAddress | Get-NetTCPConnection | Select-Object LocalAddress,localport,RemoteAddress,RemotePort,State,OwningProcess,CreationTime
