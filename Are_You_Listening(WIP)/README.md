@@ -6,6 +6,7 @@ https://ironscripter.us/are-you-listening-to-me/
 The latest challenge from the Iron Scripter Chairman starts with a simple exercise aimed at PowerShell beginners. It ends with a more complex set of requirements for advanced PowerShell scripters.
  In between, you can embellish and add as much as you feel comfortable doing. The core of the challenge is based on the Get-NetTCPConnection cmdlet.
  
+ -----
 ### The Beginner Challenge
 
 Write a command to display listening and established connections on a computer’s primary IPv4 address. That is, the IPv4 address other than 0.0.0.0, 127.0.0.1, and 169.254.*. You should display:
@@ -23,6 +24,7 @@ You can manually specify the local IP address if you know it. Although it would 
 This is not a one-line challenge. Nor does it really need to be a script. Use as many commands as you need to achieve the task. 
 Once you have that, then you might see if you can turn it into a parameterized script that lets you specify a computer name.
 
+-----
 ### The Advanced Challenge
 
 For those of you with more PowerShell experience, your challenge is based on the requirements outlined above. 
