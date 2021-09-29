@@ -10,11 +10,12 @@ These tasks are aimed at beginner level PowerShell scripters, with a few bonuses
 
 You need to create simple PowerShell functions to meet the following goals. Each task should result in a separate function.
 
-		Given 2 lengths of a right triangle, calculate the missing length. You will need to let the user specify which sides (traditionally A,B and C) of the triangle they are specifying.
-		Calculate the area of a circle with a given diameter.
-		Calculate the volume of a sphere with a given diameter.
-		Calculate the volume of a cylinder from a given diameter and height.
-		Calculate the factorial of an integer.
+	- Given 2 lengths of a right triangle, calculate the missing length. 
+	  You will need to let the user specify which sides (traditionally A,B and C) of the triangle they are specifying.
+	- Calculate the area of a circle with a given diameter.
+	- Calculate the volume of a sphere with a given diameter.
+	- Calculate the volume of a cylinder from a given diameter and height.
+	- Calculate the factorial of an integer.
 
 ----
 ### Intermediate Additions
