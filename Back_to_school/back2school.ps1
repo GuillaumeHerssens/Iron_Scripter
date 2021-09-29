@@ -48,30 +48,28 @@ Function Triangle (){
     process{
         do{
             try{
-            $fail = 0
-            [ValidateRange(1,10000)][double]$a = Read-Host "Enter first side length"
+                $fail = 0
+                [ValidateRange(1,10000)][double]$a = Read-Host "Enter first side length"
             } catch{"Invalid length"; $fail = 1}
         } until ($fail -eq 0)
 
         if ($selection -eq 1){
             do{
-              try{
-                $fail = 0
-                [ValidateRange(1,10000)][double]$b = Read-Host "Enter second side length"
+                try{
+                    $fail = 0
+                    [ValidateRange(1,10000)][double]$b = Read-Host "Enter second side length"
                 } catch{"Invalid length"; $fail = 1}
             } until ($fail -eq 0)
-
             [math]::Sqrt(($a * $a) + ($b * $b))
         }
         elseif($selection -eq 2){
             do{
                 try{
-                  $fail = 0
-                  [ValidateRange(1,10000)][double]$b = Read-Host "Enter hypotenuse length"
-                  } catch{"Invalid length"; $fail = 1}
-              } until (($fail -eq 0) -and ($b -gt $a ))
-
-              [math]::Sqrt(($b * $b) - ($a * $a))
+                    $fail = 0
+                    [ValidateRange(1,10000)][double]$b = Read-Host "Enter hypotenuse length"
+                } catch{"Invalid length"; $fail = 1}
+            } until (($fail -eq 0) -and ($b -gt $a ))
+            [math]::Sqrt(($b * $b) - ($a * $a))
         }
     }
 }
@@ -81,14 +79,12 @@ function circle (){
     process{
         do{
             try{
-            $fail = 0
-            [ValidateRange(1,10000)][double]$a = Read-Host "Enter diameter"
+                $fail = 0
+                [ValidateRange(1,10000)][double]$a = Read-Host "Enter diameter"
             } catch{"Invalid diameter"; $fail = 1}
         } until ($fail -eq 0)
         ([math]::PI * ([math]::Pow(($a / 2), 2)))
     }
-
-
 }
 
 function sphere(){
@@ -96,46 +92,44 @@ function sphere(){
     process{
         do{
             try{
-            $fail = 0
-            [ValidateRange(1,10000)][double]$a = Read-Host "Enter diameter"
+                $fail = 0
+                [ValidateRange(1,10000)][double]$a = Read-Host "Enter diameter"
             } catch{"Invalid diameter"; $fail = 1}
         } until ($fail -eq 0)
       (([math]::PI * ([math]::Pow($a, 3))) / 6)
     }
 }
 
-
 function cylinder(){
     process{
         do{
             try{
-            $fail = 0
-            [ValidateRange(1,10000)][double]$a = Read-Host "Enter diameter"
+                $fail = 0
+                [ValidateRange(1,10000)][double]$a = Read-Host "Enter diameter"
             } catch{"Invalid diameter"; $fail = 1}
         } until ($fail -eq 0)
 
         do{
             try{
-            $fail = 0
-            [ValidateRange(1,10000)][double]$b = Read-Host "Enter height"
+                $fail = 0
+                [ValidateRange(1,10000)][double]$b = Read-Host "Enter height"
             } catch{"Invalid height"; $fail = 1}
         } until ($fail -eq 0)
-
         ([math]::PI * ([math]::Pow(($a / 2), 2) * $b))
-
     }
 }
+
 function factorial(){
     process{
         do{
             try{
-            $fail = 0
-            [ValidateRange(1,10000)][int]$a = Read-Host "Enter value"
+                $fail = 0
+                [ValidateRange(1,10000)][int]$a = Read-Host "Enter value"
             } catch{"Invalid value"; $fail = 1}
         } until ($fail -eq 0)
         $res = $a
         for ($i = 1; $i -lt $a; $i++){
-        $res = ($res * ($a - $i))
+            $res = ($res * ($a - $i))
         }
         Write-Output $res
     }
