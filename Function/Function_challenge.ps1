@@ -13,12 +13,7 @@ function ToCelsius{
         }
         Write-Output $converted
     }
-
-
 }
-
-
-
 function ToFahrenheit{
     [CmdletBinding()]
     param(
@@ -33,11 +28,6 @@ function ToFahrenheit{
         }
         Write-Output $converted
     }
-
-
-
-
-
 }
 
 $far = 32
