@@ -8,8 +8,8 @@ function ToCelsius{
     )
     process{
         $converted = [PSCustomObject]@{
-        Fahrenheit = $temp
-        Celsius = (($temp - 32) / 1.8)
+            Fahrenheit = $temp
+            Celsius = (($temp - 32) / 1.8)
         }
         Write-Output $converted
     }
@@ -30,7 +30,7 @@ function ToFahrenheit{
         $converted = [PSCustomObject]@{
             Celsius = $temp
             Fahrenheit = (($temp * 1.8) + 32)
-            }
+        }
         Write-Output $converted
     }
 
