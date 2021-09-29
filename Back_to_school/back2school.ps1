@@ -126,18 +126,19 @@ function cylinder(){
     }
 }
 function factorial(){
-
-    do{
-        try{
-        $fail = 0
-        [ValidateRange(1,10000)][int]$a = Read-Host "Enter value"
-        } catch{"Invalid value"; $fail = 1}
-    } until ($fail -eq 0)
-    $res = $a
-    for ($i = 1; $i -lt $a; $i++){
-    $res = ($res * ($a - $i))
+    process{
+        do{
+            try{
+            $fail = 0
+            [ValidateRange(1,10000)][int]$a = Read-Host "Enter value"
+            } catch{"Invalid value"; $fail = 1}
+        } until ($fail -eq 0)
+        $res = $a
+        for ($i = 1; $i -lt $a; $i++){
+        $res = ($res * ($a - $i))
+        }
+        Write-Output $res
     }
-    Write-Output $res
 }
 
 menu
